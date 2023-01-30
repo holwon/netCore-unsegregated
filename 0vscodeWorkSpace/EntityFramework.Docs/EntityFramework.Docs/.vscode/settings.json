@@ -1,0 +1,37 @@
+{
+    "markdown.docsetLanguages": [
+        ".NET Core CLI",
+        "C#",
+        "JSON",
+        "PowerShell",
+        "SQL",
+        "VB.NET",
+        "XAML",
+        "XML"
+    ],
+    "cSpell.words": [
+        "dbcontext",
+        "denormalization",
+        "idempotency",
+        "LINQ",
+        "mitigations",
+        "navigations",
+        "overridable",
+        "parameterizable",
+        "pluralizer",
+        "queryable",
+        "resultset",
+        "resultsets",
+        "roundtrips",
+        "savepoint",
+        "savepoints",
+        "serializable",
+        "subquery"
+    ],
+    "markdownlint.config": {
+        "MD028": false,
+        "MD025": {
+            "front_matter_title": ""
+        }
+    }
+}

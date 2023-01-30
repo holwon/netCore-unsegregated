@@ -1,0 +1,90 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Sandbox/Sandbox.csproj",
+                "${workspaceFolder}/MyEFCore/MyEFCore.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/Sandbox/Sandbox.csproj",
+                "${workspaceFolder}/MyEFCore/MyEFCore.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/Sandbox/Sandbox.csproj",
+                "${workspaceFolder}/MyEFCore/MyEFCore.csproj",
+                // "/c chcp 65001 >nul && dotnet build ${workspaceRoot}/Sandbox.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        // {
+        //     "label": "build",
+        //     "command": "dotnet",
+        //     "type": "process",
+        //     "args": [
+        //         "build",
+        //         "${workspaceFolder}/MyEFCore/MyEFCore.csproj",
+        //         "/property:GenerateFullPaths=true",
+        //         "/consoleloggerparameters:NoSummary"
+        //     ],
+        //     "problemMatcher": "$msCompile"
+        // },
+        // {
+        //     "label": "publish",
+        //     "command": "dotnet",
+        //     "type": "process",
+        //     "args": [
+        //         "publish",
+        //         "${workspaceFolder}/MyEFCore/MyEFCore.csproj",
+        //         "/property:GenerateFullPaths=true",
+        //         "/consoleloggerparameters:NoSummary"
+        //     ],
+        //     "problemMatcher": "$msCompile"
+        // },
+        // {
+        //     "label": "watch",
+        //     "command": "dotnet",
+        //     "type": "process",
+        //     "args": [
+        //         "watch",
+        //         "run",
+        //         "--project",
+        //         "${workspaceFolder}/MyEFCore/MyEFCore.csproj",
+        //         // "/c chcp 65001 >nul && dotnet build ${workspaceRoot}/Sandbox.csproj"
+        //     ],
+        //     "problemMatcher": "$msCompile"
+        // }
+    ]
+    // ,
+    //不行, 如何解决 OUTPUT 面板中文乱码
+    // "reveal": "always",
+    // "options": {
+    //     "env": {
+    //         "PYTHONIOENCODING": "UTF-8"
+    //     }
+    // }
+}
